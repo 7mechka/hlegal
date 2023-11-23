@@ -1,3 +1,7 @@
+body {
+    background: var(--gradient-supersoft);
+    background-repeat: no-repeat;
+}
 * {
     box-sizing: border-box;
     font-family: Montserrat;
@@ -10,6 +14,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 125% */
+    cursor: pointer;
     &:hover {
         color: var(--accent);
     }
@@ -69,3 +74,16 @@ ol {
     padding-left: calc(50vw - 660px);
     padding-right: calc(50vw - 660px);
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

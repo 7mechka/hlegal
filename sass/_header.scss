@@ -1,7 +1,13 @@
 .header {
-    background: var(--gradient-supersoft);
     padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: start;
     &-logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
         width: 302px;
         &__display {
             display: flex;
@@ -33,6 +39,100 @@
             letter-spacing: 6px;
             margin-top: 6.5px;
             user-select: none;
+        }
+    }
+    &-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        height: 20px;
+        &__dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin: 0 6px;
+            background: var(--grey-separator);
+        }
+        &__language-block {
+            &__label {
+                display: inline-flex;
+                width: 33px;
+                height: 25px;
+                justify-content: center;
+                align-items: center;
+                color: #FFF;
+                border-radius: 25%;
+                cursor: pointer;
+                .header-contacts__language-block__radio:checked + & {
+                    background: var(--accent);
+                }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        &__address-block {
+            &__link {
+                color: #FFF;
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+        &__phone-block {
+            &__link {
+                color: #FFF;
+                font-weight: 700;
+                text-decoration: none;
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+        &__facebook-block {
+           &__link {
+            &:hover {
+                path {
+                    fill: var(--accent);
+                }
+            }
+           }
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: end;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-top: -20px;
+        &__list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+        &__item {
+
+        }
+        &__link {
+            text-decoration: none;
+            margin-bottom: 3px;
+            color: #FFF;
+            font-weight: 700;
+            &:hover {
+                color: #FFF;
+                border-bottom: 2px solid currentColor;
+            }
+            &_active {
+                color: var(--accent);
+                &:hover {
+                    color: currentColor;
+                    border-bottom: 2px solid currentColor;
+                }
+            }
         }
     }
 }

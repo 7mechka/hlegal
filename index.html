@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Hlegal</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header center">
-        <div class="header-logo">
-            <div class="header-logo__display">
-                <a href="#">
-                    <h1 class="header-logo__name"><span>h</span>legal</h1>
-                </a>
-                <div class="header-logo__page">
-                    <img src="./img/icons/Slash.svg" alt="slash" class="header-logo__img">
-                    <h2 class="header-logo__current">service</h2>
-                </div>
-            </div>
-            <h4 class="header-logo__desc">LAW COMPANY</h4>
+      <div class="header-logo">
+        <div class="header-logo__display">
+          <a href="#">
+            <h1 class="header-logo__name"><span>h</span>legal</h1>
+          </a>
+          <div class="header-logo__page">
+            <img
+              src="./img/icons/Slash.svg"
+              alt="slash"
+              class="header-logo__img"
+            />
+            <h2 class="header-logo__current">service</h2>
+          </div>
         </div>
-        <div class="header__contacts"></div>
-        <nav class="header__nav"></nav>
+        <h4 class="header-logo__desc">LAW COMPANY</h4>
+      </div>
+      <div class="header-contacts">
+        <div class="header-contacts__language-block">
+            <input type="radio" id="language__radio1" name="language__radio" class="header-contacts__language-block__radio visually-hidden"></input>
+            <label for="language__radio1" class="header-contacts__language-block__label">
+                УК
+            </label>
+            <input type="radio" id="language__radio2" name="language__radio" class="header-contacts__language-block__radio visually-hidden"></input>
+            <label for="language__radio2" class="header-contacts__language-block__label">
+                РУ
+            </label>
+            <input type="radio" id="language__radio3" name="language__radio" class="header-contacts__language-block__radio visually-hidden" checked></input>
+            <label for="language__radio3" class="header-contacts__language-block__label">
+                EN
+            </label>
+        </div>
+        <span class="header-contacts__dot"></span>
+        <div class="header-contacts__address-block">
+            <a class="header-contacts__address-block__link">Kyiv, Mechnikova str, 14/1</a>
+        </div>
+        <span class="header-contacts__dot"></span>
+        <div class="header-contacts__phone-block">
+            <a href="#" class="header-contacts__phone-block__link">0800 211 927</a>
+        </div>
+        <span class="header-contacts__dot"></span>
+        <div class="header-contacts__facebook-block">
+          <a href="#" class="header-contacts__facebook-block__link">
+            <svg
+              class="header-contacts__facebook-block__img"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+                fill="#B3B3BA"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+            <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
+                    about us
+                </a>
+            </li>
+            <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
+                    services
+                </a>
+            </li>
+            <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
+                    team
+                </a>
+            </li>
+            <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
+                    publications
+                </a>
+            </li>
+            <li class="header-nav__item">
+                <a href="#" class="header-nav__link">
+                    contact
+                </a>
+            </li>
+        </ul>
+      </nav>
     </header>
-</body>
+  </body>
 </html>
