@@ -411,4 +411,9 @@ ol li::marker {
   line-height: 26px; /* 144.444% */
 }
 
+.center {
+  padding-left: calc(50vw - 660px);
+  padding-right: calc(50vw - 660px);
+}
+
 /*# sourceMappingURL=style.css.map */
