@@ -1,0 +1,38 @@
+.header {
+    background: var(--gradient-supersoft);
+    padding-top: 50px;
+    &-logo {
+        width: 302px;
+        &__display {
+            display: flex;
+            & a {
+                text-decoration: none;
+            }
+        }
+        &__name {
+            margin: 0;
+            display: flex;
+            color: #FFF;
+            letter-spacing: 1px;
+            margin-left: -2px;
+            & span {
+                color: var(--accent);
+            }
+        }
+        &__page {
+            display: none; // flex - none
+            align-items: center;
+        }
+        &__current {
+            color: #FFF;
+        }
+        &__desc {
+            color: #FFF;
+            font-size: 7px;
+            height: 7px;
+            letter-spacing: 6px;
+            margin-top: 6.5px;
+            user-select: none;
+        }
+    }
+}

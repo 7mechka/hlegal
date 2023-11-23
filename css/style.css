@@ -344,6 +344,7 @@ template {
   box-sizing: border-box;
   font-family: Montserrat;
   transition: 0.3s;
+  margin: 0;
 }
 
 a {
@@ -414,6 +415,45 @@ ol li::marker {
 .center {
   padding-left: calc(50vw - 660px);
   padding-right: calc(50vw - 660px);
+}
+
+.header {
+  background: var(--gradient-supersoft);
+  padding-top: 50px;
+}
+.header-logo {
+  width: 302px;
+}
+.header-logo__display {
+  display: flex;
+}
+.header-logo__display a {
+  text-decoration: none;
+}
+.header-logo__name {
+  margin: 0;
+  display: flex;
+  color: #FFF;
+  letter-spacing: 1px;
+  margin-left: -2px;
+}
+.header-logo__name span {
+  color: var(--accent);
+}
+.header-logo__page {
+  display: none;
+  align-items: center;
+}
+.header-logo__current {
+  color: #FFF;
+}
+.header-logo__desc {
+  color: #FFF;
+  font-size: 7px;
+  height: 7px;
+  letter-spacing: 6px;
+  margin-top: 6.5px;
+  user-select: none;
 }
 
 /*# sourceMappingURL=style.css.map */
