@@ -9,6 +9,8 @@
   </head>
   <body>
     <header class="header center">
+      <div class="header__bg"></div>
+      <!-- <div class="header__burger-menu"></div> -->
       <div class="header-logo">
         <div class="header-logo__display">
           <a href="#">
@@ -27,15 +29,15 @@
       </div>
       <div class="header-contacts">
         <div class="header-contacts__language-block">
-            <input type="radio" id="language__radio1" name="language__radio" class="header-contacts__language-block__radio visually-hidden"></input>
+            <input type="radio" id="language__radio1" name="language__radio" class="header-contacts__language-block__radio visually-hidden">
             <label for="language__radio1" class="header-contacts__language-block__label">
                 УК
             </label>
-            <input type="radio" id="language__radio2" name="language__radio" class="header-contacts__language-block__radio visually-hidden"></input>
+            <input type="radio" id="language__radio2" name="language__radio" class="header-contacts__language-block__radio visually-hidden">
             <label for="language__radio2" class="header-contacts__language-block__label">
                 РУ
             </label>
-            <input type="radio" id="language__radio3" name="language__radio" class="header-contacts__language-block__radio visually-hidden" checked></input>
+            <input type="radio" id="language__radio3" name="language__radio" class="header-contacts__language-block__radio visually-hidden" checked>
             <label for="language__radio3" class="header-contacts__language-block__label">
                 EN
             </label>
@@ -68,6 +70,47 @@
         </div>
       </div>
       <nav class="header-nav">
+        <div class="header-nav__burger">
+            <input type="checkbox" id="burger" name="burger-name" class="header-nav__burger_input visually-hidden"/>
+            <div class="header__burger-menu">
+              <label for="burger" class="header__burger-menu__label">
+                <div class="header__burger-menu__div one"></div>
+                <div class="header__burger-menu__div two"></div>
+              </label>
+              <ul class="header__burger-menu__list">
+                <li class="header__burger-menu__item">
+                  <a href="#" class="header__burger-menu__link header__burger-menu__link_current">
+                    about us
+                  </a>
+                </li>
+                <li class="header__burger-menu__item">
+                  <a href="#" class="header__burger-menu__link">
+                    services
+                  </a>
+                </li>
+                <li class="header__burger-menu__item">
+                  <a href="#" class="header__burger-menu__link">
+                    team
+                  </a>
+                </li>
+                <li class="header__burger-menu__item">
+                  <a href="#" class="header__burger-menu__link">
+                    publications
+                  </a>
+                </li>
+                <li class="header__burger-menu__item">
+                  <a href="#" class="header__burger-menu__link">
+                    contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <label for="burger" class="header-nav__burger_label">
+                <div class="header-nav__burger_div"></div>
+                <div class="header-nav__burger_div"></div>
+                <div class="header-nav__burger_div"></div>
+            </label>
+        </div>
         <ul class="header-nav__list">
             <li class="header-nav__item">
                 <a href="#" class="header-nav__link">
