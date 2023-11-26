@@ -460,7 +460,7 @@ ol li::marker {
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
-  height: 100vw;
+  height: 2183px;
   top: 0;
   left: 0;
   z-index: -2;
@@ -816,11 +816,39 @@ ol li::marker {
   flex-direction: column;
   gap: 300px;
 }
+@media screen and (max-width: 800px) {
+  .hero {
+    gap: 400px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero {
+    gap: 160px;
+  }
+}
 .hero__bg {
   position: absolute;
   top: 0;
   left: 371px;
   z-index: -2;
+}
+@media screen and (max-width: 1024px) {
+  .hero__bg {
+    width: 670px;
+    left: 177px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero__bg {
+    width: 893px;
+    left: -16px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero__bg {
+    width: 523px;
+    left: -50px;
+  }
 }
 .hero__title {
   padding-top: 370px;
@@ -828,6 +856,16 @@ ol li::marker {
   text-align: center;
   font-size: 38px;
   user-select: none;
+}
+@media screen and (max-width: 800px) {
+  .hero__title {
+    padding-top: 500px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero__title {
+    padding-top: 230px;
+  }
 }
 .hero__button {
   cursor: pointer;

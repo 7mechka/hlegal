@@ -4,11 +4,29 @@
     align-items: center;
     flex-direction: column;
     gap: 300px;
+    @media screen and (max-width: 800px){
+        gap: 400px;
+    }
+    @media screen and (max-width: 390px){
+        gap: 160px;
+    } 
     &__bg {
         position: absolute;
         top: 0;
         left: 371px;
         z-index: -2;
+        @media screen and (max-width: 1024px){
+            width: 670px;
+            left: 177px;
+        }
+        @media screen and (max-width: 800px){
+            width: 893px;
+            left: -16px; 
+        } 
+        @media screen and (max-width: 390px){
+            width: 523px;
+            left: -50px; 
+        } 
     }
     &__title {
         padding-top: 370px;
@@ -16,6 +34,12 @@
         text-align: center;
         font-size: 38px;
         user-select: none;
+        @media screen and (max-width: 800px) {
+            padding-top: 500px;
+        }
+        @media screen and (max-width: 390px){
+            padding-top: 230px;
+        } 
     }
     &__button {
         cursor: pointer;
