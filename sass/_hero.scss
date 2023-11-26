@@ -1,0 +1,26 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 300px;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 371px;
+        z-index: -2;
+    }
+    &__title {
+        padding-top: 370px;
+        color: #FFF;
+        text-align: center;
+        font-size: 38px;
+        user-select: none;
+    }
+    &__button {
+        cursor: pointer;
+        &:hover #Ellipse, &:hover #Vector {
+            stroke: var(--accent);
+        }
+    }
+}
