@@ -1,20 +1,24 @@
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 300px;
+    height: 800px;
+    // gap: 300px;
+    @media screen and (max-width: 1024px){
+        height: 768px;
+    }
     @media screen and (max-width: 800px){
-        gap: 400px;
+        height: 880px;
     }
     @media screen and (max-width: 390px){
-        gap: 160px;
+        height: 430px;
     } 
     &__bg {
         position: absolute;
         top: 0;
-        left: 371px;
-        z-index: -2;
+        left: 400px;
+        user-select: none;
         @media screen and (max-width: 1024px){
             width: 670px;
             left: 177px;
@@ -34,15 +38,21 @@
         text-align: center;
         font-size: 38px;
         user-select: none;
+        z-index: 1;
+        @media screen and (max-width: 1024px){
+            padding-top: 345px;
+        }
         @media screen and (max-width: 800px) {
-            padding-top: 500px;
+            padding-top: 400px;
         }
         @media screen and (max-width: 390px){
-            padding-top: 230px;
+            padding-top: 150px;
         } 
     }
     &__button {
         cursor: pointer;
+        z-index: 1;
+        margin-bottom: 30px;
         &:hover #Ellipse, &:hover #Vector {
             stroke: var(--accent);
         }

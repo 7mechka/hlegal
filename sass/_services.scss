@@ -50,15 +50,6 @@
         gap: 10px;
     }
     &__link {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1px;
-        &:hover + svg #Arrow__vector, #Arrow__vector:hover {
-            stroke: var(--accent);
-        }
-    }
-    &__services {
         display: flex;
         align-items: center;
     }
