@@ -20,12 +20,12 @@
             left: 177px;
         }
         @media screen and (max-width: 800px){
-            width: 893px;
+            width: 100%;
             left: -16px; 
         } 
         @media screen and (max-width: 390px){
-            width: 523px;
-            left: -50px; 
+            width: 100%;
+            left: 0; 
         } 
     }
     &__title {
