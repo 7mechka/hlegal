@@ -1,0 +1,70 @@
+.services {
+    margin-top: 60px;
+    display: grid;
+    gap: 60px;
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        padding: 0;
+        @media screen and (max-width: 800px){
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        } 
+        @media screen and (max-width: 390px){
+            grid-template-columns: auto;
+            grid-template-rows: repeat(6, 1fr);
+        }  
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__grid-title {
+        color: var(--active-regular);
+    }
+    &__desc {
+        color: #FFF;
+    }
+    &__img {
+        &_bg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 92px;
+            height: 92px;
+            padding: 14px;
+            border-radius: 24px;
+            margin-bottom: 15px;
+            background: #FFF;
+        }
+    }
+    &__head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        &:hover + svg #Arrow__vector, #Arrow__vector:hover {
+            stroke: var(--accent);
+        }
+    }
+    &__services {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        font-size: 38px;
+        background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
