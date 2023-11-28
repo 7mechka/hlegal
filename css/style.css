@@ -838,6 +838,7 @@ ol li::marker {
   align-items: center;
   flex-direction: column;
   height: 800px;
+  padding-top: 140px;
 }
 @media screen and (max-width: 1024px) {
   .hero {
@@ -878,33 +879,40 @@ ol li::marker {
     left: 0;
   }
 }
+.hero__container {
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+.hero__content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 .hero__title {
-  padding-top: 370px;
   color: #FFF;
   text-align: center;
   font-size: 38px;
   user-select: none;
   z-index: 1;
+  padding-bottom: 60px;
+  word-break: break-word;
 }
-@media screen and (max-width: 1024px) {
-  .hero__title {
-    padding-top: 345px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .hero__title {
-    padding-top: 400px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .hero__title {
-    padding-top: 150px;
-  }
+.hero__title-block {
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 .hero__button {
   cursor: pointer;
   z-index: 1;
   margin-bottom: 30px;
+}
+.hero__button-block {
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 .hero__button:hover #Ellipse, .hero__button:hover #Vector {
   stroke: var(--accent);
