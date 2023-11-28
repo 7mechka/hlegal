@@ -1163,6 +1163,7 @@ ol li::marker {
   border-radius: 50px;
   background: var(--active-regular);
   opacity: 0.2;
+  cursor: pointer;
 }
 
 .clients {
@@ -1215,6 +1216,12 @@ ol li::marker {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.clients__item a {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clients__item-bg_1 {
   background: #1C4280;
