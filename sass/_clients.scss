@@ -1,3 +1,9 @@
+#clients__padding {
+    // margin-bottom: 60px;
+    @media screen and (min-width: 1920px){
+        margin-bottom: 60px;
+    }
+}
 .clients {
     margin-top: 60px;
     display: flex;
