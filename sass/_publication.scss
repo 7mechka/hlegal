@@ -1,6 +1,7 @@
 .publication {
     background: var(--grey-bg);
     padding-top: 30px;
+    padding-bottom: 30px;
     &__head {
 
     }
@@ -45,12 +46,14 @@
     &__item {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     &__img {
         height: 200px;
         align-self: stretch;
         object-fit: cover;
         width: 100%;
+        border-radius: 8px 8px 0px 0px;
         &-block {
             display: flex;
         }
@@ -80,7 +83,7 @@
         line-height: 22px;
     }
 }
-#test {
+#publication__stretch {
     @media screen and (max-width: 800px){
         grid-column: 1 / 3;
     } 
