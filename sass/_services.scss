@@ -37,6 +37,9 @@
     }
     &__grid-title {
         color: var(--active-regular);
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 700;
     }
     &__desc {
         color: #FFF;

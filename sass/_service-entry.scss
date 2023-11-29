@@ -1,0 +1,115 @@
+.services-entry {
+    margin: 0 120px;
+    padding-top: 140px;
+    @media screen and (min-width: 1920px){
+        margin: 0 220px;
+    }
+    @media screen and (max-width: 1024px){
+        margin: 0;
+    }
+    @media screen and (max-width: 800px){
+        padding-top: 240px;
+    } 
+    @media screen and (max-width: 390px){
+        padding-top: 140px;
+    }
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding: 60px 0;
+        @media screen and (max-width: 390px){
+            padding: 0 0 30px;
+        }
+    }
+    &__img {
+        &-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 92px;
+            height: 92px;
+            padding: 14px;
+            border-radius: 24px;
+            margin-bottom: 15px;
+            background: #FFF;
+        }
+        &-block {
+            
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 38px;
+        background: var(--gradient-red-text);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &-block {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__desc {
+        color: var(--basic-white, #FFF);
+        text-align: center;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px; /* 157.895% */
+        &-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+        }
+    }
+    &__button {
+        cursor: pointer;
+    }
+    &__link {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+            color: #FFF;
+        }
+    }
+    &__div {
+        height: 4px;
+        width: 100%;
+        background: #FFF;
+        opacity: .5;
+    }
+    &__grid {
+        &-title {
+            color: #FFF;
+            font-size: 22px;
+            &-block {
+                padding: 30px 0;
+            }
+
+        }
+    }
+    &__list {
+        padding-left: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        @media screen and (max-width: 390px){
+            grid-template-columns: auto;
+            
+        }
+    }
+    &__item {
+
+    }
+    &__p {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px; /* 144.444% */
+    }
+}

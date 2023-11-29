@@ -88,10 +88,13 @@
       text-decoration: none;
       font-size: 24px;
       font-weight: 700;
-    }
-    &_current {
+      &_active {
         color: var(--accent);
+      }
     }
+    // &_current {
+    //     color: var(--accent);
+    // }
     #burger:checked + & {
       transform: translateY(0);
       visibility: visible;
@@ -138,6 +141,7 @@
       align-items: center;
     }
     &__current {
+      user-select: none;
       @media screen and (max-width: 390px) {
         font-size: 20px;
         font-weight: 400;
@@ -272,7 +276,7 @@
       &_active {
         color: var(--accent);
         &:hover {
-          color: currentColor;
+          color: var(--accent);
           border-bottom: 2px solid currentColor;
         }
       }
@@ -320,4 +324,7 @@
       }
     }
   }
+}
+#page__visible {
+  display: flex;
 }

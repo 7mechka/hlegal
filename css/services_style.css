@@ -456,6 +456,22 @@ ol li::marker {
   overflow: hidden;
 }
 
+.btn-main {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--active-regular);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  padding: 18px 30px;
+}
+.btn-main:hover {
+  background: var(--active-hover);
+}
+.btn-main:active {
+  background: var(--active-active);
+}
+
 .splasher {
   background: var(--gradient-supersoft);
   background-repeat: no-repeat;
@@ -586,7 +602,7 @@ ol li::marker {
   font-size: 24px;
   font-weight: 700;
 }
-.header__burger-menu_current {
+.header__burger-menu__link_active {
   color: var(--accent);
 }
 #burger:checked + .header__burger-menu {
@@ -641,6 +657,7 @@ ol li::marker {
   align-items: center;
 }
 .header-logo__current {
+  user-select: none;
   color: #fff;
 }
 @media screen and (max-width: 390px) {
@@ -784,7 +801,7 @@ ol li::marker {
   color: var(--accent);
 }
 .header-nav__link_active:hover {
-  color: currentColor;
+  color: var(--accent);
   border-bottom: 2px solid currentColor;
 }
 .header-nav__burger {
@@ -830,6 +847,10 @@ ol li::marker {
 }
 .header-nav__burger_div:nth-last-child(1) {
   top: 3px;
+}
+
+#page__visible {
+  display: flex;
 }
 
 #services__margin {
@@ -881,6 +902,9 @@ ol li::marker {
 }
 .services__grid-title {
   color: var(--active-regular);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
 }
 .services__desc {
   color: #FFF;
